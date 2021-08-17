@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420F0D7D26CC3606009B1FD0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420F0D7C26CC3606009B1FD0 /* Place.swift */; };
 		425016EA26CC2D0F003F0408 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425016E826CC2D0F003F0408 /* MainViewController.swift */; };
 		425016EB26CC2D0F003F0408 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425016E926CC2D0F003F0408 /* MainViewController.xib */; };
 		42EFB06A26CB0050006DD74A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EFB06926CB0050006DD74A /* AppDelegate.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		420F0D7C26CC3606009B1FD0 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		425016E826CC2D0F003F0408 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		425016E926CC2D0F003F0408 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		42EFB06626CB0050006DD74A /* Next-Stop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Next-Stop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +58,7 @@
 		425016EF26CC2E95003F0408 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				420F0D7C26CC3606009B1FD0 /* Place.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				425016EA26CC2D0F003F0408 /* MainViewController.swift in Sources */,
 				42EFB06A26CB0050006DD74A /* AppDelegate.swift in Sources */,
 				42EFB06C26CB0050006DD74A /* SceneDelegate.swift in Sources */,
+				420F0D7D26CC3606009B1FD0 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
