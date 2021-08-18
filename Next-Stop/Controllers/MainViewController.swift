@@ -15,7 +15,12 @@ class MainViewController: UIViewController {
     
     // MARK: - Properties
     
-    var items: [Place] = []
+    var placesViewModel: PlacesViewModel = PlacesViewModel()
+    var items: [Place] = [] {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
     
     // MARK: - Methods
     
@@ -23,6 +28,10 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         self.setupTableView()
+        
+        self.bind()
+        
+        self.placesViewModel.getPlaces()
     }
     
     ///
@@ -31,6 +40,17 @@ class MainViewController: UIViewController {
     private func setupTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
+    }
+    
+    ///
+    /// Get new data from Places ViewModel.
+    ///
+    private func bind() {
+        self.placesViewModel.binding = {
+            if let placesList = self.placesViewModel.placesList {
+                self.items = placesList
+            }
+        }
     }
     
 }
@@ -47,12 +67,12 @@ extension MainViewController: UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return self.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "cell") as! UITableViewCell
-        cell.textLabel?.text = "Prueba"
+        cell.textLabel?.text = self.items[indexPath.row].name
         return cell
     }
     
