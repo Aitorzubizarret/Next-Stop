@@ -15,8 +15,8 @@ class MainViewController: UIViewController {
     
     // MARK: - Properties
     
-    var placesViewModel: PlacesViewModel = PlacesViewModel()
-    var items: [Place] = [] {
+    var itemsViewModel: ItemsViewModel = ItemsViewModel()
+    var items: [Item] = [] {
         didSet {
             self.tableView.reloadData()
         }
@@ -31,7 +31,7 @@ class MainViewController: UIViewController {
         
         self.bind()
         
-        self.placesViewModel.getPlaces()
+        self.itemsViewModel.getItems()
     }
     
     ///
@@ -46,9 +46,9 @@ class MainViewController: UIViewController {
     /// Get new data from Places ViewModel.
     ///
     private func bind() {
-        self.placesViewModel.binding = {
-            if let placesList = self.placesViewModel.placesList {
-                self.items = placesList
+        self.itemsViewModel.binding = {
+            if let itemsList = self.itemsViewModel.itemsList {
+                self.items = itemsList
             }
         }
     }
