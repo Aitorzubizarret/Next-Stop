@@ -10,6 +10,8 @@ import Foundation
 struct Item: Codable {
     var id: UUID
     var name: String
+    var notes: [Note]?
+    var places: [Place]?
     
     init(place: Place) {
         self.id = place.id
@@ -19,6 +21,8 @@ struct Item: Codable {
     init(trip: Trip) {
         self.id = trip.id
         self.name = trip.name
+        self.notes = trip.notes
+        self.places = trip.places
     }
     
     init(note: Note) {

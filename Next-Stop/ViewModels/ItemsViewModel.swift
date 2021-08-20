@@ -24,7 +24,7 @@ class ItemsViewModel {
     // MARK: - Methods
     
     ///
-    /// Get places.
+    /// Get Items.
     ///
     public func getItems() {
         
@@ -34,9 +34,9 @@ class ItemsViewModel {
         let placeDemo3: Place = Place(id: UUID(), name: "Place 3")
         
         // Trips
-        let tripDemo1: Trip = Trip(id: UUID(), name: "Trip 1", info: [], places: [])
-        let tripDemo2: Trip = Trip(id: UUID(), name: "Trip 2", info: [], places: [])
-        let tripDemo3: Trip = Trip(id: UUID(), name: "Trip 3", info: [], places: [])
+        let tripDemo1: Trip = Trip(id: UUID(), name: "Trip 1", notes: [], places: [])
+        let tripDemo2: Trip = Trip(id: UUID(), name: "Trip 2", notes: [], places: [])
+        let tripDemo3: Trip = Trip(id: UUID(), name: "Trip 3", notes: [], places: [])
         
         // Notes
         let noteDemo1: Note = Note(id: UUID(), title: "Note 1", description: "")

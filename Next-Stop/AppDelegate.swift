@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Create the Main ViewController.
-        let mainVC = MainViewController()
+        let mainVC = Initializer.shared.createMainViewController()
         
         let frame = UIScreen.main.bounds
         window = UIWindow(frame: frame)

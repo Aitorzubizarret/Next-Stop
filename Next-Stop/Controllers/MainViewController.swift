@@ -15,12 +15,8 @@ class MainViewController: UIViewController {
     
     // MARK: - Properties
     
-    var itemsViewModel: ItemsViewModel = ItemsViewModel()
-    var items: [Item] = [] {
-        didSet {
-            self.tableView.reloadData()
-        }
-    }
+    var itemsViewModel: ItemsViewModel?
+    var items: [Item] = []
     
     // MARK: - Methods
     
@@ -28,10 +24,6 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         self.setupTableView()
-        
-        self.bind()
-        
-        self.itemsViewModel.getItems()
     }
     
     ///
@@ -40,17 +32,6 @@ class MainViewController: UIViewController {
     private func setupTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
-    }
-    
-    ///
-    /// Get new data from Places ViewModel.
-    ///
-    private func bind() {
-        self.itemsViewModel.binding = {
-            if let itemsList = self.itemsViewModel.itemsList {
-                self.items = itemsList
-            }
-        }
     }
     
 }

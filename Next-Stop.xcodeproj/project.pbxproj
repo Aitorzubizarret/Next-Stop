@@ -12,6 +12,7 @@
 		425016EB26CC2D0F003F0408 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425016E926CC2D0F003F0408 /* MainViewController.xib */; };
 		427EA0CB26CEFF4800B095A6 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EA0CA26CEFF4800B095A6 /* Trip.swift */; };
 		427EA0CE26CEFF7F00B095A6 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EA0CD26CEFF7F00B095A6 /* Note.swift */; };
+		4280063126D065EE000EE137 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4280063026D065EE000EE137 /* Initializer.swift */; };
 		428161F326D013D900E4BED5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428161F226D013D900E4BED5 /* Item.swift */; };
 		428161F726D01AFE00E4BED5 /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428161F626D01AFE00E4BED5 /* ItemsViewModel.swift */; };
 		42EFB06A26CB0050006DD74A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EFB06926CB0050006DD74A /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		425016E926CC2D0F003F0408 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		427EA0CA26CEFF4800B095A6 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		427EA0CD26CEFF7F00B095A6 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		4280063026D065EE000EE137 /* Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
 		428161F226D013D900E4BED5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		428161F626D01AFE00E4BED5 /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
 		42EFB06626CB0050006DD74A /* Next-Stop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Next-Stop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 				425016ED26CC2E88003F0408 /* Controllers */,
 				42EFB06926CB0050006DD74A /* AppDelegate.swift */,
 				42EFB06B26CB0050006DD74A /* SceneDelegate.swift */,
+				4280063026D065EE000EE137 /* Initializer.swift */,
 				42EFB07226CB0051006DD74A /* Assets.xcassets */,
 				42EFB07426CB0051006DD74A /* LaunchScreen.storyboard */,
 				42EFB07726CB0051006DD74A /* Info.plist */,
@@ -186,6 +189,7 @@
 			files = (
 				427EA0CB26CEFF4800B095A6 /* Trip.swift in Sources */,
 				427EA0CE26CEFF7F00B095A6 /* Note.swift in Sources */,
+				4280063126D065EE000EE137 /* Initializer.swift in Sources */,
 				425016EA26CC2D0F003F0408 /* MainViewController.swift in Sources */,
 				428161F326D013D900E4BED5 /* Item.swift in Sources */,
 				42EFB06A26CB0050006DD74A /* AppDelegate.swift in Sources */,
