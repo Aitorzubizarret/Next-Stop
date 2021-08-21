@@ -16,7 +16,13 @@ class MainViewController: UIViewController {
     // MARK: - Properties
     
     var itemsViewModel: ItemsViewModel?
-    var items: [Item] = []
+    var items: [Item] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
     
     // MARK: - Methods
     

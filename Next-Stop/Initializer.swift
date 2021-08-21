@@ -27,9 +27,7 @@ class Initializer {
         
         // Add the function to execute when the ViewModel gets new data.
         itemsViewModel.binding = {
-            if let itemsList = itemsViewModel.itemsList {
-                mainVC.items = itemsList
-            }
+            mainVC.items = itemsViewModel.itemsList
         }
         
         // Get new data for the ViewModel.
