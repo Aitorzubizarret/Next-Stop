@@ -44,7 +44,14 @@ class MainViewController: UIViewController {
 
 // MARK: - UITableView Delegate
 
-extension MainViewController: UITableViewDelegate {}
+extension MainViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC: DetailViewController = DetailViewController()
+        self.show(detailVC, sender: self)
+    }
+    
+}
 
 // MARK: - UITableView Data Source
 

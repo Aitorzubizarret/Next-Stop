@@ -58,7 +58,6 @@
 			children = (
 				425016E826CC2D0F003F0408 /* MainViewController.swift */,
 				425B429426D1A0870007AB96 /* DetailViewController.swift */,
-				425B429526D1A0870007AB96 /* DetailViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -67,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				425016E926CC2D0F003F0408 /* MainViewController.xib */,
+				425B429526D1A0870007AB96 /* DetailViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";

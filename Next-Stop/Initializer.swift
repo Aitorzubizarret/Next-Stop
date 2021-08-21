@@ -22,6 +22,10 @@ class Initializer {
         // Create the MainViewController.
         let mainVC = MainViewController()
         
+        // Create the Navigation Controller.
+        let navController: UINavigationController = UINavigationController()
+        navController.setViewControllers([mainVC], animated: true)
+        
         // Create the Items ViewModel.
         let itemsViewModel: ItemsViewModel = ItemsViewModel()
         
@@ -36,7 +40,7 @@ class Initializer {
         // Add the ViewModel to the MainViewController.
         mainVC.itemsViewModel = itemsViewModel
         
-        return mainVC
+        return navController
     }
     
 }
