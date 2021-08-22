@@ -85,9 +85,46 @@ extension MainViewController: UITableViewDelegate {
 
 extension MainViewController: UITableViewDataSource {
     
+    // MARK: Sections
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        // UIView
+        let headerView: UIView = UIView()
+        
+        // UILabel
+        let sectionNameLabel: UILabel = UILabel()
+        sectionNameLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        sectionNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        switch section {
+        case 0:
+            sectionNameLabel.text = "TRIPS"
+        case 1:
+            sectionNameLabel.text = "PLACES"
+        case 2:
+            sectionNameLabel.text = "NOTES"
+        default:
+            sectionNameLabel.text = ""
+        }
+        headerView.addSubview(sectionNameLabel)
+        NSLayoutConstraint.activate([
+            sectionNameLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 15),
+            sectionNameLabel.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 10),
+            sectionNameLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -15),
+            sectionNameLabel.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: -10)
+        ])
+        
+        return headerView
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
+    
+    // MARK: Rows
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
@@ -101,6 +138,8 @@ extension MainViewController: UITableViewDataSource {
             return 0
         }
     }
+    
+    // MARK: Cells
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
