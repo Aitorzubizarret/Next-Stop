@@ -12,10 +12,15 @@
 		425016EB26CC2D0F003F0408 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425016E926CC2D0F003F0408 /* MainViewController.xib */; };
 		425B429626D1A0870007AB96 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B429426D1A0870007AB96 /* DetailViewController.swift */; };
 		425B429726D1A0870007AB96 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425B429526D1A0870007AB96 /* DetailViewController.xib */; };
+		425B429D26D1A6A70007AB96 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B429B26D1A6A70007AB96 /* PlaceTableViewCell.swift */; };
+		425B429E26D1A6A70007AB96 /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425B429C26D1A6A70007AB96 /* PlaceTableViewCell.xib */; };
+		425B42A626D1A6EE0007AB96 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B42A426D1A6EE0007AB96 /* TripTableViewCell.swift */; };
+		425B42A726D1A6EE0007AB96 /* TripTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425B42A526D1A6EE0007AB96 /* TripTableViewCell.xib */; };
+		425B42AC26D1A6FC0007AB96 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B42AA26D1A6FC0007AB96 /* NoteTableViewCell.swift */; };
+		425B42AD26D1A6FC0007AB96 /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425B42AB26D1A6FC0007AB96 /* NoteTableViewCell.xib */; };
 		427EA0CB26CEFF4800B095A6 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EA0CA26CEFF4800B095A6 /* Trip.swift */; };
 		427EA0CE26CEFF7F00B095A6 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427EA0CD26CEFF7F00B095A6 /* Note.swift */; };
 		4280063126D065EE000EE137 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4280063026D065EE000EE137 /* Initializer.swift */; };
-		428161F326D013D900E4BED5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428161F226D013D900E4BED5 /* Item.swift */; };
 		428161F726D01AFE00E4BED5 /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428161F626D01AFE00E4BED5 /* ItemsViewModel.swift */; };
 		42EFB06A26CB0050006DD74A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EFB06926CB0050006DD74A /* AppDelegate.swift */; };
 		42EFB06C26CB0050006DD74A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EFB06B26CB0050006DD74A /* SceneDelegate.swift */; };
@@ -29,10 +34,15 @@
 		425016E926CC2D0F003F0408 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		425B429426D1A0870007AB96 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		425B429526D1A0870007AB96 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		425B429B26D1A6A70007AB96 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		425B429C26D1A6A70007AB96 /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
+		425B42A426D1A6EE0007AB96 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
+		425B42A526D1A6EE0007AB96 /* TripTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripTableViewCell.xib; sourceTree = "<group>"; };
+		425B42AA26D1A6FC0007AB96 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		425B42AB26D1A6FC0007AB96 /* NoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
 		427EA0CA26CEFF4800B095A6 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		427EA0CD26CEFF7F00B095A6 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		4280063026D065EE000EE137 /* Initializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
-		428161F226D013D900E4BED5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		428161F626D01AFE00E4BED5 /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
 		42EFB06626CB0050006DD74A /* Next-Stop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Next-Stop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EFB06926CB0050006DD74A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +84,6 @@
 		425016EF26CC2E95003F0408 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				428161F226D013D900E4BED5 /* Item.swift */,
 				420F0D7C26CC3606009B1FD0 /* Place.swift */,
 				427EA0CA26CEFF4800B095A6 /* Trip.swift */,
 				427EA0CD26CEFF7F00B095A6 /* Note.swift */,
@@ -88,6 +97,43 @@
 				428161F626D01AFE00E4BED5 /* ItemsViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		425B429A26D1A68B0007AB96 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				425B42A026D1A6AB0007AB96 /* Place */,
+				425B42A126D1A6B80007AB96 /* Trip */,
+				425B42A326D1A6D50007AB96 /* Note */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		425B42A026D1A6AB0007AB96 /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				425B429B26D1A6A70007AB96 /* PlaceTableViewCell.swift */,
+				425B429C26D1A6A70007AB96 /* PlaceTableViewCell.xib */,
+			);
+			path = Place;
+			sourceTree = "<group>";
+		};
+		425B42A126D1A6B80007AB96 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				425B42A426D1A6EE0007AB96 /* TripTableViewCell.swift */,
+				425B42A526D1A6EE0007AB96 /* TripTableViewCell.xib */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		425B42A326D1A6D50007AB96 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				425B42AA26D1A6FC0007AB96 /* NoteTableViewCell.swift */,
+				425B42AB26D1A6FC0007AB96 /* NoteTableViewCell.xib */,
+			);
+			path = Note;
 			sourceTree = "<group>";
 		};
 		42EFB05D26CB0050006DD74A = {
@@ -111,6 +157,7 @@
 			children = (
 				425016EF26CC2E95003F0408 /* Models */,
 				425016EE26CC2E90003F0408 /* Views */,
+				425B429A26D1A68B0007AB96 /* Cells */,
 				425016F026CC2F4D003F0408 /* ViewModels */,
 				425016ED26CC2E88003F0408 /* Controllers */,
 				42EFB06926CB0050006DD74A /* AppDelegate.swift */,
@@ -180,9 +227,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425B42AD26D1A6FC0007AB96 /* NoteTableViewCell.xib in Resources */,
+				425B42A726D1A6EE0007AB96 /* TripTableViewCell.xib in Resources */,
 				42EFB07626CB0051006DD74A /* LaunchScreen.storyboard in Resources */,
 				425016EB26CC2D0F003F0408 /* MainViewController.xib in Resources */,
 				42EFB07326CB0051006DD74A /* Assets.xcassets in Resources */,
+				425B429E26D1A6A70007AB96 /* PlaceTableViewCell.xib in Resources */,
 				425B429726D1A0870007AB96 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,11 +244,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425B42A626D1A6EE0007AB96 /* TripTableViewCell.swift in Sources */,
+				425B42AC26D1A6FC0007AB96 /* NoteTableViewCell.swift in Sources */,
 				427EA0CB26CEFF4800B095A6 /* Trip.swift in Sources */,
 				427EA0CE26CEFF7F00B095A6 /* Note.swift in Sources */,
 				4280063126D065EE000EE137 /* Initializer.swift in Sources */,
 				425016EA26CC2D0F003F0408 /* MainViewController.swift in Sources */,
-				428161F326D013D900E4BED5 /* Item.swift in Sources */,
+				425B429D26D1A6A70007AB96 /* PlaceTableViewCell.swift in Sources */,
 				42EFB06A26CB0050006DD74A /* AppDelegate.swift in Sources */,
 				42EFB06C26CB0050006DD74A /* SceneDelegate.swift in Sources */,
 				425B429626D1A0870007AB96 /* DetailViewController.swift in Sources */,

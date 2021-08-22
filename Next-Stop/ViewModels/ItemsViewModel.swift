@@ -15,13 +15,21 @@ class ItemsViewModel {
     var binding = { () -> () in }
     
     // Data Source
-    var itemsList: [Item] = [] {
+    var tripsList: [Trip] = [] {
         didSet {
             self.binding()
         }
     }
-    
-    var lock = DispatchSemaphore(value: 1) // Used to control the data writing in itemsList by different methods at the same time.
+    var placesList: [Place] = [] {
+        didSet {
+            self.binding()
+        }
+    }
+    var notesList: [Note] = [] {
+        didSet {
+            self.binding()
+        }
+    }
     
     // MARK: - Methods
     
@@ -34,15 +42,7 @@ class ItemsViewModel {
         self.getPlaces { (result) in
             switch result {
             case .success(let newPlaces):
-                var items: [Item] = []
-                
-                for place in newPlaces {
-                    items.append(Item(place: place))
-                }
-                
-                self.lock.wait()
-                self.itemsList = self.itemsList + items
-                self.lock.signal()
+                self.placesList = newPlaces
             case .failure(let error):
                 print("Error getting places: \(error)")
             }
@@ -52,15 +52,7 @@ class ItemsViewModel {
         self.getTrips { (result) in
             switch result {
             case .success(let newTrips):
-                var items: [Item] = []
-                
-                for trip in newTrips {
-                    items.append(Item(trip: trip))
-                }
-                
-                self.lock.wait()
-                self.itemsList = self.itemsList + items
-                self.lock.signal()
+                self.tripsList = newTrips
             case .failure(let error):
                 print("Error getting trips: \(error)")
             }
@@ -70,15 +62,7 @@ class ItemsViewModel {
         self.getNotes { (result) in
             switch result {
             case .success(let newNotes):
-                var items: [Item] = []
-                
-                for note in newNotes {
-                    items.append(Item(note: note))
-                }
-                
-                self.lock.wait()
-                self.itemsList = self.itemsList + items
-                self.lock.signal()
+                self.notesList = newNotes
             case .failure(let error):
                 print("Error getting notes: \(error)")
             }
@@ -138,9 +122,9 @@ extension ItemsViewModel {
     private func getNotes(completion: @escaping (Result<[Note], Error>) -> Void) {
         DispatchQueue.global().asyncAfter(deadline: .now() + 0.5) {
             // Notes
-            let noteDemo1: Note = Note(id: UUID(), title: "Note 1", description: "")
-            let noteDemo2: Note = Note(id: UUID(), title: "Note 2", description: "")
-            let noteDemo3: Note = Note(id: UUID(), title: "Note 3", description: "")
+            let noteDemo1: Note = Note(id: UUID(), title: "Note 1", description: "This is the description of the Note 1")
+            let noteDemo2: Note = Note(id: UUID(), title: "Note 2", description: "This is the description of the Note 2")
+            let noteDemo3: Note = Note(id: UUID(), title: "Note 3", description: "This is the description of the Note 3")
             
             completion(.success([noteDemo1, noteDemo2, noteDemo3]))
         }
