@@ -24,6 +24,8 @@ class Initializer {
         
         // Create the Navigation Controller.
         let navController: UINavigationController = UINavigationController()
+        navController.navigationBar.barTintColor = UIColor.white
+        navController.navigationBar.shadowImage = UIImage()
         navController.setViewControllers([mainVC], animated: true)
         
         // Create the Items ViewModel.
@@ -41,6 +43,7 @@ class Initializer {
         
         // Add the ViewModel to the MainViewController.
         mainVC.itemsViewModel = itemsViewModel
+        mainVC.title = "Next Stop"
         
         return navController
     }
