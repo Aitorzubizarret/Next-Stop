@@ -11,6 +11,7 @@ class TripTableViewCell: UITableViewCell {
     
     // MARK: - UI Elements
     
+    @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var tripName: UILabel!
     
     // MARK: - Properties
@@ -42,6 +43,11 @@ class TripTableViewCell: UITableViewCell {
     ///
     private func setupView() {
         self.selectionStyle = .none
+        
+        // UIView.
+        self.mainView.layer.borderWidth = 1
+        self.mainView.layer.borderColor = UIColor.gray.cgColor
+        self.mainView.layer.cornerRadius = 4
     }
     
 }

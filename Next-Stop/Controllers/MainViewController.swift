@@ -57,6 +57,8 @@ class MainViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
+        self.tableView.separatorStyle = .none
+        
         // Register the cells.
         let placeCell: UINib = UINib(nibName: self.placeCellName, bundle: nil)
         self.tableView.register(placeCell, forCellReuseIdentifier: self.placeCellName)
@@ -94,6 +96,7 @@ extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         // UIView
         let headerView: UIView = UIView()
+        headerView.backgroundColor = UIColor.white
         
         // UILabel
         let sectionNameLabel: UILabel = UILabel()

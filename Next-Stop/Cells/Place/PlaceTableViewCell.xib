@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,25 +18,43 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X80-EM-PNI">
-                        <rect key="frame" x="20" y="20" width="280" height="78"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBo-J5-Rgg">
+                        <rect key="frame" x="15" y="0.0" width="290" height="103"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X80-EM-PNI">
+                                <rect key="frame" x="10" y="10" width="270" height="83"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X80-EM-PNI" firstAttribute="top" secondItem="WBo-J5-Rgg" secondAttribute="top" constant="10" id="eYt-eB-APN"/>
+                            <constraint firstAttribute="trailing" secondItem="X80-EM-PNI" secondAttribute="trailing" constant="10" id="md0-5X-0Ak"/>
+                            <constraint firstItem="X80-EM-PNI" firstAttribute="leading" secondItem="WBo-J5-Rgg" secondAttribute="leading" constant="10" id="sg4-WF-VqU"/>
+                            <constraint firstAttribute="bottom" secondItem="X80-EM-PNI" secondAttribute="bottom" constant="10" id="yEW-6l-zL4"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="X80-EM-PNI" secondAttribute="bottom" constant="20" id="OT4-bQ-qOd"/>
-                    <constraint firstItem="X80-EM-PNI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="WYP-Hd-eln"/>
-                    <constraint firstAttribute="trailing" secondItem="X80-EM-PNI" secondAttribute="trailing" constant="20" id="Zb8-fa-5CR"/>
-                    <constraint firstItem="X80-EM-PNI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="rw2-wZ-Bl8"/>
+                    <constraint firstAttribute="bottom" secondItem="WBo-J5-Rgg" secondAttribute="bottom" constant="15" id="6i7-Ml-9wE"/>
+                    <constraint firstItem="WBo-J5-Rgg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8To-sW-qqn"/>
+                    <constraint firstAttribute="trailing" secondItem="WBo-J5-Rgg" secondAttribute="trailing" constant="15" id="pLa-8F-n6h"/>
+                    <constraint firstItem="WBo-J5-Rgg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="wJb-WO-x0Y"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="mainView" destination="WBo-J5-Rgg" id="kVg-jT-Tyi"/>
                 <outlet property="nameLabel" destination="X80-EM-PNI" id="xQA-8r-obC"/>
             </connections>
             <point key="canvasLocation" x="-30.434782608695656" y="89.732142857142847"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
