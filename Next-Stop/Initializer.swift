@@ -31,7 +31,9 @@ class Initializer {
         
         // Add the function to execute when the ViewModel gets new data.
         itemsViewModel.binding = {
-            mainVC.items = itemsViewModel.itemsList
+            mainVC.trips = itemsViewModel.tripsList
+            mainVC.places = itemsViewModel.placesList
+            mainVC.notes = itemsViewModel.notesList
         }
         
         // Get new data for the ViewModel.
