@@ -21,31 +21,43 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBo-J5-Rgg">
                         <rect key="frame" x="15" y="0.0" width="290" height="103"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X80-EM-PNI">
-                                <rect key="frame" x="10" y="10" width="270" height="83"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z6v-MI-I58">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Duv-L9-Cjv"/>
+                                    <constraint firstAttribute="width" secondItem="Z6v-MI-I58" secondAttribute="height" multiplier="1:1" id="GMe-11-Cld"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X80-EM-PNI">
+                                <rect key="frame" x="105" y="0.0" width="175" height="93"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="X80-EM-PNI" firstAttribute="top" secondItem="WBo-J5-Rgg" secondAttribute="top" constant="10" id="eYt-eB-APN"/>
-                            <constraint firstAttribute="trailing" secondItem="X80-EM-PNI" secondAttribute="trailing" constant="10" id="md0-5X-0Ak"/>
-                            <constraint firstItem="X80-EM-PNI" firstAttribute="leading" secondItem="WBo-J5-Rgg" secondAttribute="leading" constant="10" id="sg4-WF-VqU"/>
-                            <constraint firstAttribute="bottom" secondItem="X80-EM-PNI" secondAttribute="bottom" constant="10" id="yEW-6l-zL4"/>
+                            <constraint firstItem="Z6v-MI-I58" firstAttribute="top" secondItem="WBo-J5-Rgg" secondAttribute="top" id="0Ix-8l-Uxz"/>
+                            <constraint firstAttribute="bottom" secondItem="X80-EM-PNI" secondAttribute="bottom" constant="10" id="UtA-2w-mUB"/>
+                            <constraint firstItem="Z6v-MI-I58" firstAttribute="leading" secondItem="WBo-J5-Rgg" secondAttribute="leading" id="fWr-uh-nWk"/>
+                            <constraint firstItem="X80-EM-PNI" firstAttribute="top" secondItem="WBo-J5-Rgg" secondAttribute="top" id="mtv-lW-xbh"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Z6v-MI-I58" secondAttribute="bottom" constant="10" id="oZC-F8-2PE"/>
+                            <constraint firstItem="X80-EM-PNI" firstAttribute="leading" secondItem="Z6v-MI-I58" secondAttribute="trailing" constant="15" id="s7v-NQ-gmM"/>
+                            <constraint firstAttribute="trailing" secondItem="X80-EM-PNI" secondAttribute="trailing" constant="10" id="x1U-mT-d1S"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="WBo-J5-Rgg" secondAttribute="bottom" constant="15" id="6i7-Ml-9wE"/>
-                    <constraint firstItem="WBo-J5-Rgg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8To-sW-qqn"/>
-                    <constraint firstAttribute="trailing" secondItem="WBo-J5-Rgg" secondAttribute="trailing" constant="15" id="pLa-8F-n6h"/>
-                    <constraint firstItem="WBo-J5-Rgg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="wJb-WO-x0Y"/>
+                    <constraint firstItem="WBo-J5-Rgg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1Xo-XZ-RZx"/>
+                    <constraint firstAttribute="trailing" secondItem="WBo-J5-Rgg" secondAttribute="trailing" constant="15" id="8Yw-mk-LZz"/>
+                    <constraint firstItem="WBo-J5-Rgg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ZfM-L3-c3y"/>
+                    <constraint firstAttribute="bottom" secondItem="WBo-J5-Rgg" secondAttribute="bottom" constant="15" id="cIb-Uq-e2S"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="iconImageView" destination="Z6v-MI-I58" id="kdg-yI-fNd"/>
                 <outlet property="mainView" destination="WBo-J5-Rgg" id="kVg-jT-Tyi"/>
                 <outlet property="nameLabel" destination="X80-EM-PNI" id="xQA-8r-obC"/>
             </connections>
@@ -55,6 +67,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

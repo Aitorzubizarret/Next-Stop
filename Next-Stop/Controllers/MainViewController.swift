@@ -90,7 +90,7 @@ extension MainViewController: UITableViewDataSource {
     // MARK: Sections
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 60
+        return 48
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -115,9 +115,9 @@ extension MainViewController: UITableViewDataSource {
         headerView.addSubview(sectionNameLabel)
         NSLayoutConstraint.activate([
             sectionNameLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 15),
-            sectionNameLabel.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 10),
+            sectionNameLabel.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 0),
             sectionNameLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -15),
-            sectionNameLabel.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: -10)
+            sectionNameLabel.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 0)
         ])
         
         return headerView

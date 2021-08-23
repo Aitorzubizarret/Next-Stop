@@ -12,6 +12,7 @@ class PlaceTableViewCell: UITableViewCell {
     // MARK: - UI Elements
     
     @IBOutlet weak var mainView: UIView!
+    @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
     // MARK: - Properties
@@ -44,10 +45,8 @@ class PlaceTableViewCell: UITableViewCell {
     private func setupView() {
         self.selectionStyle = .none
         
-        // UIView.
-        self.mainView.layer.borderWidth = 1
-        self.mainView.layer.borderColor = UIColor.gray.cgColor
-        self.mainView.layer.cornerRadius = 4
+        // UIImageView
+        self.iconImageView.layer.cornerRadius = 6
     }
     
 }

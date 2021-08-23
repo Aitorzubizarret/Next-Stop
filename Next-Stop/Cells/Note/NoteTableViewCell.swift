@@ -12,6 +12,7 @@ class NoteTableViewCell: UITableViewCell {
     // MARK: - UI Elements
     
     @IBOutlet weak var mainView: UIView!
+    @IBOutlet weak var borderImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
@@ -46,10 +47,8 @@ class NoteTableViewCell: UITableViewCell {
     private func setupView() {
         self.selectionStyle = .none
         
-        // UIView.
-        self.mainView.layer.borderWidth = 1
-        self.mainView.layer.borderColor = UIColor.gray.cgColor
-        self.mainView.layer.cornerRadius = 4
+        // UIImageView
+        self.borderImageView.layer.cornerRadius = 2
     }
     
 }

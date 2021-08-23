@@ -12,7 +12,10 @@ class TripTableViewCell: UITableViewCell {
     // MARK: - UI Elements
     
     @IBOutlet weak var mainView: UIView!
-    @IBOutlet weak var tripName: UILabel!
+    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var startDateLabel: UILabel!
+    @IBOutlet weak var endDateLabel: UILabel!
     
     // MARK: - Properties
     
@@ -20,7 +23,19 @@ class TripTableViewCell: UITableViewCell {
         didSet {
             guard let receivedTrip = self.trip else { return }
             
-            self.tripName.text = receivedTrip.name
+            self.nameLabel.text = receivedTrip.name
+            
+            if let startDate: Date = receivedTrip.startDate {
+                self.startDateLabel.text = "Start: \(startDate.description)"
+            } else {
+                self.startDateLabel.text = "Start: -"
+            }
+            
+            if let endDate: Date = receivedTrip.endDate {
+                self.endDateLabel.text = "End:  \(endDate.description)"
+            } else {
+                self.endDateLabel.text = "End: -"
+            }
         }
     }
     
@@ -44,10 +59,8 @@ class TripTableViewCell: UITableViewCell {
     private func setupView() {
         self.selectionStyle = .none
         
-        // UIView.
-        self.mainView.layer.borderWidth = 1
-        self.mainView.layer.borderColor = UIColor.gray.cgColor
-        self.mainView.layer.cornerRadius = 4
+        // UIImageView
+        self.photoImageView.layer.cornerRadius = 6
     }
     
 }
