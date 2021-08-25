@@ -77,8 +77,19 @@ class MainViewController: UIViewController {
 extension MainViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailVC: DetailViewController = DetailViewController()
-        self.show(detailVC, sender: self)
+        switch indexPath.section {
+        case 0:
+            let tripDetailVC: TripDetailViewController = TripDetailViewController()
+            self.show(tripDetailVC, sender: self)
+        case 1:
+            let placeDetailVC: PlaceDetailViewController = PlaceDetailViewController()
+            self.show(placeDetailVC, sender: self)
+        case 2:
+            let noteDetailVC: NoteDetailViewController = NoteDetailViewController()
+            self.show(noteDetailVC, sender: self)
+        default:
+            print("Unknow section")
+        }
     }
     
 }
