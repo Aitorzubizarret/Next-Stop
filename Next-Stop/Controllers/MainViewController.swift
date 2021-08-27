@@ -80,6 +80,7 @@ extension MainViewController: UITableViewDelegate {
         switch indexPath.section {
         case 0:
             let tripDetailVC: TripDetailViewController = TripDetailViewController()
+            tripDetailVC.trip = self.trips[indexPath.row]
             self.show(tripDetailVC, sender: self)
         case 1:
             let placeDetailVC: PlaceDetailViewController = PlaceDetailViewController()

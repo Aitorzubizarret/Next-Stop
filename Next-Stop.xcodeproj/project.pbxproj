@@ -27,6 +27,8 @@
 		42DDF1C526D6D91E00F5E8DE /* PlaceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DDF1C326D6D91E00F5E8DE /* PlaceDetailViewController.xib */; };
 		42DDF1C926D6D93200F5E8DE /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DDF1C726D6D93200F5E8DE /* NoteDetailViewController.swift */; };
 		42DDF1CA26D6D93200F5E8DE /* NoteDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DDF1C826D6D93200F5E8DE /* NoteDetailViewController.xib */; };
+		42E446FD26D98372009D53A7 /* TripDetailDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E446FB26D98372009D53A7 /* TripDetailDescriptionTableViewCell.swift */; };
+		42E446FE26D98372009D53A7 /* TripDetailDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E446FC26D98372009D53A7 /* TripDetailDescriptionTableViewCell.xib */; };
 		42EFB06A26CB0050006DD74A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EFB06926CB0050006DD74A /* AppDelegate.swift */; };
 		42EFB06C26CB0050006DD74A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EFB06B26CB0050006DD74A /* SceneDelegate.swift */; };
 		42EFB07326CB0051006DD74A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EFB07226CB0051006DD74A /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		42DDF1C326D6D91E00F5E8DE /* PlaceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDetailViewController.xib; sourceTree = "<group>"; };
 		42DDF1C726D6D93200F5E8DE /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 		42DDF1C826D6D93200F5E8DE /* NoteDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDetailViewController.xib; sourceTree = "<group>"; };
+		42E446FB26D98372009D53A7 /* TripDetailDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		42E446FC26D98372009D53A7 /* TripDetailDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripDetailDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		42EFB06626CB0050006DD74A /* Next-Stop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Next-Stop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EFB06926CB0050006DD74A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42EFB06B26CB0050006DD74A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,9 +121,10 @@
 		425B429A26D1A68B0007AB96 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				425B42A026D1A6AB0007AB96 /* Place */,
 				425B42A126D1A6B80007AB96 /* Trip */,
+				425B42A026D1A6AB0007AB96 /* Place */,
 				425B42A326D1A6D50007AB96 /* Note */,
+				42E446F226D94037009D53A7 /* TripDetail */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -149,6 +154,23 @@
 				425B42AB26D1A6FC0007AB96 /* NoteTableViewCell.xib */,
 			);
 			path = Note;
+			sourceTree = "<group>";
+		};
+		42E446F226D94037009D53A7 /* TripDetail */ = {
+			isa = PBXGroup;
+			children = (
+				42E446F926D98135009D53A7 /* Description */,
+			);
+			path = TripDetail;
+			sourceTree = "<group>";
+		};
+		42E446F926D98135009D53A7 /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				42E446FB26D98372009D53A7 /* TripDetailDescriptionTableViewCell.swift */,
+				42E446FC26D98372009D53A7 /* TripDetailDescriptionTableViewCell.xib */,
+			);
+			path = Description;
 			sourceTree = "<group>";
 		};
 		42EFB05D26CB0050006DD74A = {
@@ -244,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E446FE26D98372009D53A7 /* TripDetailDescriptionTableViewCell.xib in Resources */,
 				425B42AD26D1A6FC0007AB96 /* NoteTableViewCell.xib in Resources */,
 				425B42A726D1A6EE0007AB96 /* TripTableViewCell.xib in Resources */,
 				42EFB07626CB0051006DD74A /* LaunchScreen.storyboard in Resources */,
@@ -275,6 +298,7 @@
 				42DDF1BF26D6D90A00F5E8DE /* TripDetailViewController.swift in Sources */,
 				42EFB06A26CB0050006DD74A /* AppDelegate.swift in Sources */,
 				42EFB06C26CB0050006DD74A /* SceneDelegate.swift in Sources */,
+				42E446FD26D98372009D53A7 /* TripDetailDescriptionTableViewCell.swift in Sources */,
 				42DDF1C426D6D91E00F5E8DE /* PlaceDetailViewController.swift in Sources */,
 				420F0D7D26CC3606009B1FD0 /* Place.swift in Sources */,
 				428161F726D01AFE00E4BED5 /* ItemsViewModel.swift in Sources */,
