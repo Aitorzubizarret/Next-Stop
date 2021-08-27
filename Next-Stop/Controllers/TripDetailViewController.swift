@@ -20,6 +20,7 @@ class TripDetailViewController: UIViewController {
     
     var trip: Trip?
     var tripDetailDescriptionTitleCellName: String = "TripDetailDescriptionTableViewCell"
+    private let topViewMinHeight: CGFloat = 100 // Minimun TopView height.
     
     // MARK: - Methods
     
@@ -66,7 +67,10 @@ class TripDetailViewController: UIViewController {
 extension TripDetailViewController: UITableViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        self.topViewHeightConstraint.constant = -scrollView.contentOffset.y
+        // Check the scrollview content offset to control the minimun TopView height.
+        if -scrollView.contentOffset.y > self.topViewMinHeight {
+            self.topViewHeightConstraint.constant = -scrollView.contentOffset.y
+        }
     }
     
 }
