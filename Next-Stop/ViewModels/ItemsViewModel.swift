@@ -101,9 +101,27 @@ extension ItemsViewModel {
     private func getTrips(completion: @escaping (Result<[Trip], Error>) -> Void) {
         DispatchQueue.global().asyncAfter(deadline: .now() + 0.5) {
             // Trips
-            let tripDemo1: Trip = Trip(id: UUID(), name: "Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1", notes: [], places: [])
-            let tripDemo2: Trip = Trip(id: UUID(), name: "Trip 2", notes: [], places: [])
-            let tripDemo3: Trip = Trip(id: UUID(), name: "Trip 3", startDate: Date(), endDate: Date(), notes: [], places: [])
+            let tripDemo1: Trip = Trip(id: UUID(),
+                                      name: "Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1",
+                                      description: "Bla bla bla bla bla bla bla",
+                                      startDate: nil,
+                                      endDate: nil,
+                                      notes: [],
+                                      places: [])
+            let tripDemo2: Trip = Trip(id: UUID(),
+                                       name: "Trip 2",
+                                       description: nil,
+                                       startDate: nil,
+                                       endDate: nil,
+                                       notes: [],
+                                       places: [])
+            let tripDemo3: Trip = Trip(id: UUID(),
+                                       name: "Trip 3",
+                                       description: nil,
+                                       startDate: nil,
+                                       endDate: nil,
+                                       notes: [],
+                                       places: [])
             
             completion(.success([tripDemo1, tripDemo2, tripDemo3]))
         }
