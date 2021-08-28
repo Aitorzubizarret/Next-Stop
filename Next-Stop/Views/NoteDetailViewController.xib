@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoteDetailViewController" customModule="Next_Stop" customModuleProvider="target">
             <connections>
+                <outlet property="tableview" destination="tjj-Ak-sLX" id="Mbh-6B-q9A"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,8 +19,32 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BwV-9X-Col">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tjj-Ak-sLX">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="tjj-Ak-sLX" firstAttribute="top" secondItem="BwV-9X-Col" secondAttribute="top" id="Goj-8e-O41"/>
+                        <constraint firstAttribute="bottom" secondItem="tjj-Ak-sLX" secondAttribute="bottom" id="UQQ-BX-1Ga"/>
+                        <constraint firstItem="tjj-Ak-sLX" firstAttribute="leading" secondItem="BwV-9X-Col" secondAttribute="leading" id="YLm-VW-sDh"/>
+                        <constraint firstAttribute="trailing" secondItem="tjj-Ak-sLX" secondAttribute="trailing" id="iam-Jm-6fN"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="BwV-9X-Col" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="S9m-02-EJ1"/>
+                <constraint firstAttribute="bottom" secondItem="BwV-9X-Col" secondAttribute="bottom" id="T1r-KZ-5av"/>
+                <constraint firstItem="BwV-9X-Col" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YRa-y9-id8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BwV-9X-Col" secondAttribute="trailing" id="hfB-gB-UVc"/>
+            </constraints>
             <point key="canvasLocation" x="141" y="154"/>
         </view>
     </objects>
