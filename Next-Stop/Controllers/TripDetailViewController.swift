@@ -11,15 +11,16 @@ class TripDetailViewController: UIViewController {
     
     // MARK: - UI Elements
     
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var topViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var topViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var tableview: UITableView!
     
     // MARK: - Properties
     
     var trip: Trip?
-    var tripDetailDescriptionTitleCellName: String = "TripDetailDescriptionTableViewCell"
+    private let tripDetailDescriptionTitleCellName: String = "TripDetailDescriptionTableViewCell"
     private let topViewMinHeight: CGFloat = 100 // Minimun TopView height.
     
     // MARK: - Methods
@@ -36,10 +37,7 @@ class TripDetailViewController: UIViewController {
     ///
     private func setupView() {
         // Navigation bar.
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = .clear
+        self.navigationController?.customDesignTransparent()
         
         guard let receivedTrip: Trip = self.trip else { return }
         
@@ -60,6 +58,7 @@ class TripDetailViewController: UIViewController {
         let descriptionCell: UINib = UINib(nibName: self.tripDetailDescriptionTitleCellName, bundle: nil)
         self.tableview.register(descriptionCell, forCellReuseIdentifier: self.tripDetailDescriptionTitleCellName)
     }
+    
 }
 
 // MARK: - UITableView Delegate

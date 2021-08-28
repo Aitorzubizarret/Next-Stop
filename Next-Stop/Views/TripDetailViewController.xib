@@ -15,7 +15,8 @@
                 <outlet property="photoImageView" destination="WvJ-mQ-iar" id="UgN-fL-eYX"/>
                 <outlet property="tableview" destination="A6z-nZ-XzW" id="Z3A-DV-2fQ"/>
                 <outlet property="titleLabel" destination="oQb-is-ccW" id="Fig-0c-Sbu"/>
-                <outlet property="topViewHeightConstraint" destination="Wsv-eS-iZt" id="UXn-tJ-Lhp"/>
+                <outlet property="topView" destination="zD3-6C-YJI" id="xga-v9-h2s"/>
+                <outlet property="topViewHeightConstraint" destination="Wsv-eS-iZt" id="BUr-1f-uUd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
