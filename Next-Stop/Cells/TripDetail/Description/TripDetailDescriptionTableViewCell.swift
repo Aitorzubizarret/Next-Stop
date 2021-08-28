@@ -27,13 +27,21 @@ class TripDetailDescriptionTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.setupView()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    ///
+    /// Setup the view.
+    ///
+    private func setupView() {
+        self.selectionStyle = .none
     }
     
 }
