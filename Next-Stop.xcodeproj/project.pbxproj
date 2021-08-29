@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		420F0D7D26CC3606009B1FD0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420F0D7C26CC3606009B1FD0 /* Place.swift */; };
+		4247E81E26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4247E81C26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift */; };
+		4247E81F26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4247E81D26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.xib */; };
 		425016EA26CC2D0F003F0408 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425016E826CC2D0F003F0408 /* MainViewController.swift */; };
 		425016EB26CC2D0F003F0408 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425016E926CC2D0F003F0408 /* MainViewController.xib */; };
 		425B429D26D1A6A70007AB96 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B429B26D1A6A70007AB96 /* PlaceTableViewCell.swift */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		420F0D7C26CC3606009B1FD0 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		4247E81C26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailTitleDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		4247E81D26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDetailTitleDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		425016E826CC2D0F003F0408 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		425016E926CC2D0F003F0408 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		425B429B26D1A6A70007AB96 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4247E81B26DC1CAD00E8F6C6 /* TitleDescription */ = {
+			isa = PBXGroup;
+			children = (
+				4247E81C26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift */,
+				4247E81D26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.xib */,
+			);
+			path = TitleDescription;
+			sourceTree = "<group>";
+		};
 		425016ED26CC2E88003F0408 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +140,7 @@
 				425B42A026D1A6AB0007AB96 /* Place */,
 				425B42A326D1A6D50007AB96 /* Note */,
 				42E446F226D94037009D53A7 /* TripDetail */,
+				42806D6D26DA927E00DA5CC5 /* NoteDetail */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -164,6 +178,14 @@
 				42806D6A26DA4FE900DA5CC5 /* UINavigationController-extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		42806D6D26DA927E00DA5CC5 /* NoteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4247E81B26DC1CAD00E8F6C6 /* TitleDescription */,
+			);
+			path = NoteDetail;
 			sourceTree = "<group>";
 		};
 		42E446F226D94037009D53A7 /* TripDetail */ = {
@@ -283,6 +305,7 @@
 				42EFB07626CB0051006DD74A /* LaunchScreen.storyboard in Resources */,
 				425016EB26CC2D0F003F0408 /* MainViewController.xib in Resources */,
 				42EFB07326CB0051006DD74A /* Assets.xcassets in Resources */,
+				4247E81F26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.xib in Resources */,
 				425B429E26D1A6A70007AB96 /* PlaceTableViewCell.xib in Resources */,
 				42DDF1C526D6D91E00F5E8DE /* PlaceDetailViewController.xib in Resources */,
 				42DDF1C026D6D90A00F5E8DE /* TripDetailViewController.xib in Resources */,
@@ -299,6 +322,7 @@
 			files = (
 				42806D6B26DA4FE900DA5CC5 /* UINavigationController-extension.swift in Sources */,
 				425B42A626D1A6EE0007AB96 /* TripTableViewCell.swift in Sources */,
+				4247E81E26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift in Sources */,
 				42DDF1C926D6D93200F5E8DE /* NoteDetailViewController.swift in Sources */,
 				425B42AC26D1A6FC0007AB96 /* NoteTableViewCell.swift in Sources */,
 				42DDF1BA26D6D46B00F5E8DE /* Template.swift in Sources */,
