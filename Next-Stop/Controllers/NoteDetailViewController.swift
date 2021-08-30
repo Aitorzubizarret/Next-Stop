@@ -15,6 +15,7 @@ class NoteDetailViewController: UIViewController {
     
     // MARK: - Properties
     
+    var note: Note?
     private let noteDetailTitleDescriptionCellName: String = "NoteDetailTitleDescriptionTableViewCell"
     
     // MARK: - Methods
@@ -31,6 +32,10 @@ class NoteDetailViewController: UIViewController {
     ///
     private func setupView() {
         self.title = "Note Detail VC"
+        
+        guard let receivedNote = self.note else { return }
+        
+        print("Note : \(receivedNote.title)")
     }
     
     ///

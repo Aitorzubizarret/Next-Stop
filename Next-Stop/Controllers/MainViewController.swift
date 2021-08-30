@@ -87,6 +87,7 @@ extension MainViewController: UITableViewDelegate {
             self.show(placeDetailVC, sender: self)
         case 2:
             let noteDetailVC: NoteDetailViewController = NoteDetailViewController()
+            noteDetailVC.note = self.notes[indexPath.row]
             self.show(noteDetailVC, sender: self)
         default:
             print("Unknow section")
