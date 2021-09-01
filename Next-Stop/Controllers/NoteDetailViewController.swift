@@ -73,6 +73,7 @@ extension NoteDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let titleDescriptionCell = self.tableview.dequeueReusableCell(withIdentifier: self.noteDetailTitleDescriptionCellName, for: indexPath) as! NoteDetailTitleDescriptionTableViewCell
+        titleDescriptionCell.note = self.note
         return titleDescriptionCell
     }
     

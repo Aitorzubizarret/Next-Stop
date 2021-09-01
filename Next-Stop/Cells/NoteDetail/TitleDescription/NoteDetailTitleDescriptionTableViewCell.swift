@@ -8,7 +8,25 @@
 import UIKit
 
 class NoteDetailTitleDescriptionTableViewCell: UITableViewCell {
-
+    
+    // MARK: - UI Elements
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    // MARK: - Properties
+    
+    var note: Note? {
+        didSet {
+            guard let receivedNote = self.note else { return }
+            
+            self.titleLabel.text = receivedNote.title
+            self.descriptionLabel.text = receivedNote.description
+        }
+    }
+    
+    // MARK: - Methods
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
