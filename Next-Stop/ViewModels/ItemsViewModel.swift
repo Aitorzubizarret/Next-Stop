@@ -37,6 +37,15 @@ class ItemsViewModel {
     /// Get Items.
     ///
     public func getItems() {
+        // Trips
+        self.getTrips { (result) in
+            switch result {
+            case .success(let newTrips):
+                self.tripsList = newTrips
+            case .failure(let error):
+                print("Error getting trips: \(error)")
+            }
+        }
         
         // Places
         self.getPlaces { (result) in
@@ -45,16 +54,6 @@ class ItemsViewModel {
                 self.placesList = newPlaces
             case .failure(let error):
                 print("Error getting places: \(error)")
-            }
-        }
-        
-        // Trips
-        self.getTrips { (result) in
-            switch result {
-            case .success(let newTrips):
-                self.tripsList = newTrips
-            case .failure(let error):
-                print("Error getting trips: \(error)")
             }
         }
         
@@ -71,39 +70,19 @@ class ItemsViewModel {
     
 }
 
-// MARK: - API Places
-
-extension ItemsViewModel {
-    
-    ///
-    /// Get places asynchronously.
-    ///
-    private func getPlaces(completion: @escaping (Result<[Place], Error>) -> Void) {
-        DispatchQueue.global().asyncAfter(deadline: .now() + 0.5) {
-            // Places
-            let placeDemo1: Place = Place(id: UUID(), name: "Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1")
-            let placeDemo2: Place = Place(id: UUID(), name: "Place 2")
-            let placeDemo3: Place = Place(id: UUID(), name: "Place 3")
-            
-            completion(.success([placeDemo1, placeDemo2, placeDemo3]))
-        }
-    }
-    
-}
-
 // MARK: - API Trips
 
 extension ItemsViewModel {
     
     ///
-    /// Get trips asynchronously.
+    /// Get Trips asynchronously.
     ///
     private func getTrips(completion: @escaping (Result<[Trip], Error>) -> Void) {
-        DispatchQueue.global().asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 0.8) {
             // Trips
             let tripDemo1: Trip = Trip(id: UUID(),
                                       name: "Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1 Trip 1",
-                                      description: "Bla bla bla bla bla bla bla",
+                                      description: "Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla",
                                       startDate: nil,
                                       endDate: nil,
                                       notes: [],
@@ -125,7 +104,26 @@ extension ItemsViewModel {
             
             completion(.success([tripDemo1, tripDemo2, tripDemo3]))
         }
-        
+    }
+    
+}
+
+// MARK: - API Places
+
+extension ItemsViewModel {
+    
+    ///
+    /// Get Places asynchronously.
+    ///
+    private func getPlaces(completion: @escaping (Result<[Place], Error>) -> Void) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 0.6) {
+            // Places
+            let placeDemo1: Place = Place(id: UUID(), name: "Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1")
+            let placeDemo2: Place = Place(id: UUID(), name: "Place 2")
+            let placeDemo3: Place = Place(id: UUID(), name: "Place 3")
+            
+            completion(.success([placeDemo1, placeDemo2, placeDemo3]))
+        }
     }
     
 }
@@ -135,12 +133,12 @@ extension ItemsViewModel {
 extension ItemsViewModel {
     
     ///
-    /// Get notes asynchronously.
+    /// Get Notes asynchronously.
     ///
     private func getNotes(completion: @escaping (Result<[Note], Error>) -> Void) {
-        DispatchQueue.global().asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 0.4) {
             // Notes
-            let noteDemo1: Note = Note(id: UUID(), title: "Note 1", description: "This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1")
+            let noteDemo1: Note = Note(id: UUID(), title: "Note 1", description: "This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1 This is the description of the Note 1")
             let noteDemo2: Note = Note(id: UUID(), title: "Note 2 Note 2 Note 2 Note 2 Note 2 Note 2 Note 2 Note 2 Note 2 Note 2 Note 2 Note 2 Note 2 Note 2 Note 2 Note 2", description: "This is the description of the Note 2")
             let noteDemo3: Note = Note(id: UUID(), title: "Note 3 Note 3 Note 3 Note 3", description: "This is the description of the Note 3 This is the description of the Note 3 This is the description of the Note 3 This is the description of the Note 3")
             
