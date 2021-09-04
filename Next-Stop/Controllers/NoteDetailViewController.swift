@@ -30,13 +30,7 @@ class NoteDetailViewController: UIViewController {
     ///
     /// Setup the View.
     ///
-    private func setupView() {
-        self.title = "Note Detail VC"
-        
-        guard let receivedNote = self.note else { return }
-        
-        print("Note : \(receivedNote.title)")
-    }
+    private func setupView() {}
     
     ///
     /// Setup the TableView.
