@@ -84,6 +84,7 @@ extension MainViewController: UITableViewDelegate {
             self.show(tripDetailVC, sender: self)
         case 1:
             let placeDetailVC: PlaceDetailViewController = PlaceDetailViewController()
+            placeDetailVC.place = self.places[indexPath.row]
             self.show(placeDetailVC, sender: self)
         case 2:
             let noteDetailVC: NoteDetailViewController = NoteDetailViewController()

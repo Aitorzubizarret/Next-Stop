@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		420F0D7D26CC3606009B1FD0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420F0D7C26CC3606009B1FD0 /* Place.swift */; };
+		4244F6F226ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4244F6F026ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.swift */; };
+		4244F6F326ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4244F6F126ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.xib */; };
 		4247E81E26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4247E81C26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift */; };
 		4247E81F26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4247E81D26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.xib */; };
 		425016EA26CC2D0F003F0408 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425016E826CC2D0F003F0408 /* MainViewController.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		420F0D7C26CC3606009B1FD0 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		4244F6F026ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		4244F6F126ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDetailDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		4247E81C26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailTitleDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		4247E81D26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDetailTitleDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		425016E826CC2D0F003F0408 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4244F6EE26ED488F007C82EC /* PlaceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4244F6EF26ED48A5007C82EC /* Description */,
+			);
+			path = PlaceDetail;
+			sourceTree = "<group>";
+		};
+		4244F6EF26ED48A5007C82EC /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				4244F6F026ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.swift */,
+				4244F6F126ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.xib */,
+			);
+			path = Description;
+			sourceTree = "<group>";
+		};
 		4247E81B26DC1CAD00E8F6C6 /* TitleDescription */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +139,8 @@
 		425016EF26CC2E95003F0408 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				420F0D7C26CC3606009B1FD0 /* Place.swift */,
 				427EA0CA26CEFF4800B095A6 /* Trip.swift */,
+				420F0D7C26CC3606009B1FD0 /* Place.swift */,
 				427EA0CD26CEFF7F00B095A6 /* Note.swift */,
 			);
 			path = Models;
@@ -140,6 +161,7 @@
 				425B42A026D1A6AB0007AB96 /* Place */,
 				425B42A326D1A6D50007AB96 /* Note */,
 				42E446F226D94037009D53A7 /* TripDetail */,
+				4244F6EE26ED488F007C82EC /* PlaceDetail */,
 				42806D6D26DA927E00DA5CC5 /* NoteDetail */,
 			);
 			path = Cells;
@@ -310,6 +332,7 @@
 				42DDF1C526D6D91E00F5E8DE /* PlaceDetailViewController.xib in Resources */,
 				42DDF1C026D6D90A00F5E8DE /* TripDetailViewController.xib in Resources */,
 				42DDF1CA26D6D93200F5E8DE /* NoteDetailViewController.xib in Resources */,
+				4244F6F326ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +354,7 @@
 				4280063126D065EE000EE137 /* Initializer.swift in Sources */,
 				425016EA26CC2D0F003F0408 /* MainViewController.swift in Sources */,
 				425B429D26D1A6A70007AB96 /* PlaceTableViewCell.swift in Sources */,
+				4244F6F226ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.swift in Sources */,
 				42DDF1BF26D6D90A00F5E8DE /* TripDetailViewController.swift in Sources */,
 				42EFB06A26CB0050006DD74A /* AppDelegate.swift in Sources */,
 				42EFB06C26CB0050006DD74A /* SceneDelegate.swift in Sources */,

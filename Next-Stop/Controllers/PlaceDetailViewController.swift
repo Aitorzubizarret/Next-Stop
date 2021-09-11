@@ -15,6 +15,9 @@ class PlaceDetailViewController: UIViewController {
     
     // MARK: - Properties
     
+    var place: Place?
+    private let placeDetailDescriptionCellName: String = "PlaceDetailDescriptionTableViewCell"
+    
     // MARK: - Methods
     
     override func viewDidLoad() {
@@ -39,6 +42,10 @@ class PlaceDetailViewController: UIViewController {
         self.tableView.dataSource = self
         
         self.tableView.separatorStyle = .none
+        
+        // Register the cells.
+        let descriptionCell: UINib = UINib(nibName: self.placeDetailDescriptionCellName, bundle: nil)
+        self.tableView.register(descriptionCell, forCellReuseIdentifier: self.placeDetailDescriptionCellName)
     }
     
 }
@@ -59,9 +66,9 @@ extension PlaceDetailViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "Cell"
-        return cell
+        let descriptionCell = self.tableView.dequeueReusableCell(withIdentifier: self.placeDetailDescriptionCellName, for: indexPath) as! PlaceDetailDescriptionTableViewCell
+        descriptionCell.place = self.place
+        return descriptionCell
     }
     
 }
