@@ -16,6 +16,7 @@ class PlaceDetailViewController: UIViewController {
     // MARK: - Properties
     
     var place: Place?
+    private let placeDetailPhotoAndNameCellName: String = "PlaceDetailPhotoAndNameTableViewCell"
     private let placeDetailDescriptionCellName: String = "PlaceDetailDescriptionTableViewCell"
     
     // MARK: - Methods
@@ -42,6 +43,9 @@ class PlaceDetailViewController: UIViewController {
         self.tableView.separatorStyle = .none
         
         // Register the cells.
+        let photoAndNameCell: UINib = UINib(nibName: self.placeDetailPhotoAndNameCellName, bundle: nil)
+        self.tableView.register(photoAndNameCell, forCellReuseIdentifier: self.placeDetailPhotoAndNameCellName)
+        
         let descriptionCell: UINib = UINib(nibName: self.placeDetailDescriptionCellName, bundle: nil)
         self.tableView.register(descriptionCell, forCellReuseIdentifier: self.placeDetailDescriptionCellName)
     }
@@ -60,13 +64,25 @@ extension PlaceDetailViewController: UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let descriptionCell = self.tableView.dequeueReusableCell(withIdentifier: self.placeDetailDescriptionCellName, for: indexPath) as! PlaceDetailDescriptionTableViewCell
-        descriptionCell.place = self.place
-        return descriptionCell
+        switch indexPath.row {
+        case 0:
+            let photoAndNameCell = self.tableView.dequeueReusableCell(withIdentifier: self.placeDetailPhotoAndNameCellName, for: indexPath) as! PlaceDetailPhotoAndNameTableViewCell
+            photoAndNameCell.photo = nil
+            photoAndNameCell.name = self.place?.name
+            return photoAndNameCell
+        case 1:
+            let descriptionCell = self.tableView.dequeueReusableCell(withIdentifier: self.placeDetailDescriptionCellName, for: indexPath) as! PlaceDetailDescriptionTableViewCell
+            descriptionCell.place = self.place
+            return descriptionCell
+        default:
+            let cell: UITableViewCell = UITableViewCell()
+            return cell
+        }
+        
     }
     
 }

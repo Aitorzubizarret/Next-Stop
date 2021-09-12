@@ -10,4 +10,5 @@ import Foundation
 struct Place: Codable {
     var id: UUID
     var name: String
+    var description: String?
 }

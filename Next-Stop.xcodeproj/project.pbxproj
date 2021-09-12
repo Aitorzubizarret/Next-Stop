@@ -25,6 +25,8 @@
 		4280063126D065EE000EE137 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4280063026D065EE000EE137 /* Initializer.swift */; };
 		42806D6B26DA4FE900DA5CC5 /* UINavigationController-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42806D6A26DA4FE900DA5CC5 /* UINavigationController-extension.swift */; };
 		428161F726D01AFE00E4BED5 /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428161F626D01AFE00E4BED5 /* ItemsViewModel.swift */; };
+		42BCE00E26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BCE00C26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.swift */; };
+		42BCE00F26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BCE00D26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.xib */; };
 		42DDF1BA26D6D46B00F5E8DE /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DDF1B926D6D46B00F5E8DE /* Template.swift */; };
 		42DDF1BF26D6D90A00F5E8DE /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DDF1BD26D6D90A00F5E8DE /* TripDetailViewController.swift */; };
 		42DDF1C026D6D90A00F5E8DE /* TripDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DDF1BE26D6D90A00F5E8DE /* TripDetailViewController.xib */; };
@@ -60,6 +62,8 @@
 		42806D6A26DA4FE900DA5CC5 /* UINavigationController-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController-extension.swift"; sourceTree = "<group>"; };
 		428161F626D01AFE00E4BED5 /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
 		42AE93E726D5943C00F86093 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		42BCE00C26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailPhotoAndNameTableViewCell.swift; sourceTree = "<group>"; };
+		42BCE00D26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDetailPhotoAndNameTableViewCell.xib; sourceTree = "<group>"; };
 		42DDF1B926D6D46B00F5E8DE /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 		42DDF1BD26D6D90A00F5E8DE /* TripDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewController.swift; sourceTree = "<group>"; };
 		42DDF1BE26D6D90A00F5E8DE /* TripDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripDetailViewController.xib; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 		4244F6EE26ED488F007C82EC /* PlaceDetail */ = {
 			isa = PBXGroup;
 			children = (
+				42BCE00B26EEAD9700167DBF /* PhotoAndName */,
 				4244F6EF26ED48A5007C82EC /* Description */,
 			);
 			path = PlaceDetail;
@@ -208,6 +213,15 @@
 				4247E81B26DC1CAD00E8F6C6 /* TitleDescription */,
 			);
 			path = NoteDetail;
+			sourceTree = "<group>";
+		};
+		42BCE00B26EEAD9700167DBF /* PhotoAndName */ = {
+			isa = PBXGroup;
+			children = (
+				42BCE00C26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.swift */,
+				42BCE00D26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.xib */,
+			);
+			path = PhotoAndName;
 			sourceTree = "<group>";
 		};
 		42E446F226D94037009D53A7 /* TripDetail */ = {
@@ -333,6 +347,7 @@
 				42DDF1C026D6D90A00F5E8DE /* TripDetailViewController.xib in Resources */,
 				42DDF1CA26D6D93200F5E8DE /* NoteDetailViewController.xib in Resources */,
 				4244F6F326ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.xib in Resources */,
+				42BCE00F26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +372,7 @@
 				4244F6F226ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.swift in Sources */,
 				42DDF1BF26D6D90A00F5E8DE /* TripDetailViewController.swift in Sources */,
 				42EFB06A26CB0050006DD74A /* AppDelegate.swift in Sources */,
+				42BCE00E26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.swift in Sources */,
 				42EFB06C26CB0050006DD74A /* SceneDelegate.swift in Sources */,
 				42E446FD26D98372009D53A7 /* TripDetailDescriptionTableViewCell.swift in Sources */,
 				42DDF1C426D6D91E00F5E8DE /* PlaceDetailViewController.swift in Sources */,

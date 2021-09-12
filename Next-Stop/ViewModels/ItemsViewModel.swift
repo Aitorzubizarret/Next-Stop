@@ -118,9 +118,15 @@ extension ItemsViewModel {
     private func getPlaces(completion: @escaping (Result<[Place], Error>) -> Void) {
         DispatchQueue.global().asyncAfter(deadline: .now() + 0.6) {
             // Places
-            let placeDemo1: Place = Place(id: UUID(), name: "Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1")
-            let placeDemo2: Place = Place(id: UUID(), name: "Place 2")
-            let placeDemo3: Place = Place(id: UUID(), name: "Place 3")
+            let placeDemo1: Place = Place(id: UUID(),
+                                          name: "Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1 Place 1",
+                                          description: "Description 1")
+            let placeDemo2: Place = Place(id: UUID(),
+                                          name: "Place 2",
+                                          description: nil)
+            let placeDemo3: Place = Place(id: UUID(),
+                                          name: "Place 3",
+                                          description: "Place 3")
             
             completion(.success([placeDemo1, placeDemo2, placeDemo3]))
         }
