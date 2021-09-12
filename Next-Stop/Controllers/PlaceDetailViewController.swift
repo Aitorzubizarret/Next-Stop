@@ -30,9 +30,7 @@ class PlaceDetailViewController: UIViewController {
     ///
     /// Setup the View.
     ///
-    private func setupView() {
-        self.title = "Place Detail VC"
-    }
+    private func setupView() {}
     
     ///
     /// Setup the TableView.
