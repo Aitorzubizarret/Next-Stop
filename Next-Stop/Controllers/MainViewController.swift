@@ -47,7 +47,17 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.setupNavbar()
         self.setupTableView()
+    }
+    
+    ///
+    /// Setup the Navbar.
+    ///
+    private func setupNavbar() {
+        // Add new model button.
+        let addNewModel = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(self.goToNewModelVC))
+        navigationItem.rightBarButtonItems = [addNewModel]
     }
     
     ///
@@ -68,6 +78,14 @@ class MainViewController: UIViewController {
         
         let noteCell: UINib = UINib(nibName: self.noteCellName, bundle: nil)
         self.tableView.register(noteCell, forCellReuseIdentifier: self.noteCellName)
+    }
+    
+    ///
+    ///
+    ///
+    @objc private func goToNewModelVC() {
+        let newModelVC: NewModelViewController = NewModelViewController()
+        self.showDetailViewController(newModelVC, sender: self)
     }
     
 }

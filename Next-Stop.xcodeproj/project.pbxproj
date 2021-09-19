@@ -25,6 +25,8 @@
 		4280063126D065EE000EE137 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4280063026D065EE000EE137 /* Initializer.swift */; };
 		42806D6B26DA4FE900DA5CC5 /* UINavigationController-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42806D6A26DA4FE900DA5CC5 /* UINavigationController-extension.swift */; };
 		428161F726D01AFE00E4BED5 /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428161F626D01AFE00E4BED5 /* ItemsViewModel.swift */; };
+		42BCB9AC26F79F5E0085CCBF /* NewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BCB9AA26F79F5E0085CCBF /* NewModelViewController.swift */; };
+		42BCB9AD26F79F5E0085CCBF /* NewModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BCB9AB26F79F5E0085CCBF /* NewModelViewController.xib */; };
 		42BCE00E26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BCE00C26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.swift */; };
 		42BCE00F26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BCE00D26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.xib */; };
 		42DDF1BA26D6D46B00F5E8DE /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DDF1B926D6D46B00F5E8DE /* Template.swift */; };
@@ -62,6 +64,8 @@
 		42806D6A26DA4FE900DA5CC5 /* UINavigationController-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController-extension.swift"; sourceTree = "<group>"; };
 		428161F626D01AFE00E4BED5 /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
 		42AE93E726D5943C00F86093 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		42BCB9AA26F79F5E0085CCBF /* NewModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewModelViewController.swift; sourceTree = "<group>"; };
+		42BCB9AB26F79F5E0085CCBF /* NewModelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewModelViewController.xib; sourceTree = "<group>"; };
 		42BCE00C26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailPhotoAndNameTableViewCell.swift; sourceTree = "<group>"; };
 		42BCE00D26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDetailPhotoAndNameTableViewCell.xib; sourceTree = "<group>"; };
 		42DDF1B926D6D46B00F5E8DE /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 				42DDF1BD26D6D90A00F5E8DE /* TripDetailViewController.swift */,
 				42DDF1C226D6D91E00F5E8DE /* PlaceDetailViewController.swift */,
 				42DDF1C726D6D93200F5E8DE /* NoteDetailViewController.swift */,
+				42BCB9AA26F79F5E0085CCBF /* NewModelViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 				42DDF1BE26D6D90A00F5E8DE /* TripDetailViewController.xib */,
 				42DDF1C326D6D91E00F5E8DE /* PlaceDetailViewController.xib */,
 				42DDF1C826D6D93200F5E8DE /* NoteDetailViewController.xib */,
+				42BCB9AB26F79F5E0085CCBF /* NewModelViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 				425016EB26CC2D0F003F0408 /* MainViewController.xib in Resources */,
 				42EFB07326CB0051006DD74A /* Assets.xcassets in Resources */,
 				4247E81F26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.xib in Resources */,
+				42BCB9AD26F79F5E0085CCBF /* NewModelViewController.xib in Resources */,
 				425B429E26D1A6A70007AB96 /* PlaceTableViewCell.xib in Resources */,
 				42DDF1C526D6D91E00F5E8DE /* PlaceDetailViewController.xib in Resources */,
 				42DDF1C026D6D90A00F5E8DE /* TripDetailViewController.xib in Resources */,
@@ -362,6 +369,7 @@
 				425B42A626D1A6EE0007AB96 /* TripTableViewCell.swift in Sources */,
 				4247E81E26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift in Sources */,
 				42DDF1C926D6D93200F5E8DE /* NoteDetailViewController.swift in Sources */,
+				42BCB9AC26F79F5E0085CCBF /* NewModelViewController.swift in Sources */,
 				425B42AC26D1A6FC0007AB96 /* NoteTableViewCell.swift in Sources */,
 				42DDF1BA26D6D46B00F5E8DE /* Template.swift in Sources */,
 				427EA0CB26CEFF4800B095A6 /* Trip.swift in Sources */,
