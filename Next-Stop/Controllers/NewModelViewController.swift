@@ -8,7 +8,26 @@
 import UIKit
 
 class NewModelViewController: UIViewController {
-
+    
+    // MARK: - UI Elements
+    
+    @IBOutlet weak var newTripButton: UIButton!
+    @IBAction func newTripButtonTapped(_ sender: Any) {
+        print("Add New Trip button tapped")
+    }
+    @IBOutlet weak var newPlaceButton: UIButton!
+    @IBAction func newPlaceButtonTapped(_ sender: Any) {
+        print("Add New Place button tapped")
+    }
+    @IBOutlet weak var newNoteButton: UIButton!
+    @IBAction func newNoteButtonTapped(_ sender: Any) {
+        print("Add New Note button tapped")
+    }
+    
+    // MARK: - Properties
+    
+    // MARK: - Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
