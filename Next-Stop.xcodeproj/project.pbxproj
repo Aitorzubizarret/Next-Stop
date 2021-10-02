@@ -36,6 +36,8 @@
 		42DDF1C526D6D91E00F5E8DE /* PlaceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DDF1C326D6D91E00F5E8DE /* PlaceDetailViewController.xib */; };
 		42DDF1C926D6D93200F5E8DE /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DDF1C726D6D93200F5E8DE /* NoteDetailViewController.swift */; };
 		42DDF1CA26D6D93200F5E8DE /* NoteDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DDF1C826D6D93200F5E8DE /* NoteDetailViewController.xib */; };
+		42DE953C2708C64C00446178 /* NewTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DE953A2708C64C00446178 /* NewTripViewController.swift */; };
+		42DE953D2708C64C00446178 /* NewTripViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DE953B2708C64C00446178 /* NewTripViewController.xib */; };
 		42E446FD26D98372009D53A7 /* TripDetailDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E446FB26D98372009D53A7 /* TripDetailDescriptionTableViewCell.swift */; };
 		42E446FE26D98372009D53A7 /* TripDetailDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E446FC26D98372009D53A7 /* TripDetailDescriptionTableViewCell.xib */; };
 		42EFB06A26CB0050006DD74A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EFB06926CB0050006DD74A /* AppDelegate.swift */; };
@@ -75,6 +77,8 @@
 		42DDF1C326D6D91E00F5E8DE /* PlaceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDetailViewController.xib; sourceTree = "<group>"; };
 		42DDF1C726D6D93200F5E8DE /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 		42DDF1C826D6D93200F5E8DE /* NoteDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDetailViewController.xib; sourceTree = "<group>"; };
+		42DE953A2708C64C00446178 /* NewTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripViewController.swift; sourceTree = "<group>"; };
+		42DE953B2708C64C00446178 /* NewTripViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTripViewController.xib; sourceTree = "<group>"; };
 		42E446FB26D98372009D53A7 /* TripDetailDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		42E446FC26D98372009D53A7 /* TripDetailDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripDetailDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		42EFB06626CB0050006DD74A /* Next-Stop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Next-Stop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +135,7 @@
 				42DDF1C226D6D91E00F5E8DE /* PlaceDetailViewController.swift */,
 				42DDF1C726D6D93200F5E8DE /* NoteDetailViewController.swift */,
 				42BCB9AA26F79F5E0085CCBF /* NewModelViewController.swift */,
+				42DE95392708C62E00446178 /* NewModels */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				42DDF1C326D6D91E00F5E8DE /* PlaceDetailViewController.xib */,
 				42DDF1C826D6D93200F5E8DE /* NoteDetailViewController.xib */,
 				42BCB9AB26F79F5E0085CCBF /* NewModelViewController.xib */,
+				42DE953F2708C64F00446178 /* NewModels */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +234,22 @@
 				42BCE00D26EEAE2600167DBF /* PlaceDetailPhotoAndNameTableViewCell.xib */,
 			);
 			path = PhotoAndName;
+			sourceTree = "<group>";
+		};
+		42DE95392708C62E00446178 /* NewModels */ = {
+			isa = PBXGroup;
+			children = (
+				42DE953A2708C64C00446178 /* NewTripViewController.swift */,
+			);
+			path = NewModels;
+			sourceTree = "<group>";
+		};
+		42DE953F2708C64F00446178 /* NewModels */ = {
+			isa = PBXGroup;
+			children = (
+				42DE953B2708C64C00446178 /* NewTripViewController.xib */,
+			);
+			path = NewModels;
 			sourceTree = "<group>";
 		};
 		42E446F226D94037009D53A7 /* TripDetail */ = {
@@ -345,6 +367,7 @@
 				425B42AD26D1A6FC0007AB96 /* NoteTableViewCell.xib in Resources */,
 				425B42A726D1A6EE0007AB96 /* TripTableViewCell.xib in Resources */,
 				42EFB07626CB0051006DD74A /* LaunchScreen.storyboard in Resources */,
+				42DE953D2708C64C00446178 /* NewTripViewController.xib in Resources */,
 				425016EB26CC2D0F003F0408 /* MainViewController.xib in Resources */,
 				42EFB07326CB0051006DD74A /* Assets.xcassets in Resources */,
 				4247E81F26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.xib in Resources */,
@@ -369,6 +392,7 @@
 				425B42A626D1A6EE0007AB96 /* TripTableViewCell.swift in Sources */,
 				4247E81E26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift in Sources */,
 				42DDF1C926D6D93200F5E8DE /* NoteDetailViewController.swift in Sources */,
+				42DE953C2708C64C00446178 /* NewTripViewController.swift in Sources */,
 				42BCB9AC26F79F5E0085CCBF /* NewModelViewController.swift in Sources */,
 				425B42AC26D1A6FC0007AB96 /* NoteTableViewCell.swift in Sources */,
 				42DDF1BA26D6D46B00F5E8DE /* Template.swift in Sources */,

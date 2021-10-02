@@ -81,11 +81,16 @@ class MainViewController: UIViewController {
     }
     
     ///
-    ///
+    /// Go to NewModelViewController.
     ///
     @objc private func goToNewModelVC() {
+        // NewModelViewController.
         let newModelVC: NewModelViewController = NewModelViewController()
-        self.showDetailViewController(newModelVC, sender: self)
+        
+        // UINavigationController with the NewModelViewController as root view controller.
+        let navController: UINavigationController = UINavigationController(rootViewController: newModelVC)
+        
+        self.showDetailViewController(navController, sender: self)
     }
     
 }

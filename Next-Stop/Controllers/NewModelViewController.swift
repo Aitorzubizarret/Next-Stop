@@ -13,7 +13,7 @@ class NewModelViewController: UIViewController {
     
     @IBOutlet weak var newTripButton: UIButton!
     @IBAction func newTripButtonTapped(_ sender: Any) {
-        print("Add New Trip button tapped")
+        self.goToNewTripVC()
     }
     @IBOutlet weak var newPlaceButton: UIButton!
     @IBAction func newPlaceButtonTapped(_ sender: Any) {
@@ -38,19 +38,15 @@ class NewModelViewController: UIViewController {
     /// Setup the Navbar.
     ///
     private func setupNavbar() {
-        // Navbar.
-        let height: CGFloat = 75
-        let navbar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: height))
-        navbar.backgroundColor = UIColor.white
-        navbar.delegate = self
-        
-        // Nav item.
-        let navbarTitleItem = UINavigationItem()
-        navbarTitleItem.title = "Add new ..."
-        
-        navbar.items = [navbarTitleItem]
-        
-        self.view.addSubview(navbar)
+        self.title = "Add new ..."
+    }
+    
+    ///
+    /// Go to NewTripViewController.
+    ///
+    private func goToNewTripVC() {
+        let newTripVC: NewTripViewController = NewTripViewController()
+        self.show(newTripVC, sender: self)
     }
     
 }
