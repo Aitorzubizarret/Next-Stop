@@ -21,7 +21,7 @@ class NewModelViewController: UIViewController {
     }
     @IBOutlet weak var newNoteButton: UIButton!
     @IBAction func newNoteButtonTapped(_ sender: Any) {
-        print("Add New Note button tapped")
+        self.goToNewNoteVC()
     }
     
     // MARK: - Properties
@@ -55,6 +55,14 @@ class NewModelViewController: UIViewController {
     private func goToNewPlaceVC() {
         let newPlaceVC: NewPlaceViewController = NewPlaceViewController()
         self.show(newPlaceVC, sender: self)
+    }
+    
+    ///
+    /// Go to NewNoteViewController.
+    ///
+    private func goToNewNoteVC() {
+        let newNoteVC: NewNoteViewController = NewNoteViewController()
+        self.show(newNoteVC, sender: self)
     }
     
 }

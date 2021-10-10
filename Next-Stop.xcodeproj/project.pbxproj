@@ -10,6 +10,8 @@
 		420F0D7D26CC3606009B1FD0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420F0D7C26CC3606009B1FD0 /* Place.swift */; };
 		42308FF32713561F00637EBE /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42308FF12713561F00637EBE /* NewPlaceViewController.swift */; };
 		42308FF42713561F00637EBE /* NewPlaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42308FF22713561F00637EBE /* NewPlaceViewController.xib */; };
+		42308FF9271357C300637EBE /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42308FF7271357C300637EBE /* NewNoteViewController.swift */; };
+		42308FFA271357C300637EBE /* NewNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42308FF8271357C300637EBE /* NewNoteViewController.xib */; };
 		4244F6F226ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4244F6F026ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.swift */; };
 		4244F6F326ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4244F6F126ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.xib */; };
 		4247E81E26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4247E81C26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift */; };
@@ -52,6 +54,8 @@
 		420F0D7C26CC3606009B1FD0 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		42308FF12713561F00637EBE /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		42308FF22713561F00637EBE /* NewPlaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPlaceViewController.xib; sourceTree = "<group>"; };
+		42308FF7271357C300637EBE /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
+		42308FF8271357C300637EBE /* NewNoteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewNoteViewController.xib; sourceTree = "<group>"; };
 		4244F6F026ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		4244F6F126ED48C7007C82EC /* PlaceDetailDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDetailDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		4247E81C26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailTitleDescriptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -245,6 +249,7 @@
 			children = (
 				42DE953A2708C64C00446178 /* NewTripViewController.swift */,
 				42308FF12713561F00637EBE /* NewPlaceViewController.swift */,
+				42308FF7271357C300637EBE /* NewNoteViewController.swift */,
 			);
 			path = NewModels;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			children = (
 				42DE953B2708C64C00446178 /* NewTripViewController.xib */,
 				42308FF22713561F00637EBE /* NewPlaceViewController.xib */,
+				42308FF8271357C300637EBE /* NewNoteViewController.xib */,
 			);
 			path = NewModels;
 			sourceTree = "<group>";
@@ -374,6 +380,7 @@
 				425B42A726D1A6EE0007AB96 /* TripTableViewCell.xib in Resources */,
 				42EFB07626CB0051006DD74A /* LaunchScreen.storyboard in Resources */,
 				42DE953D2708C64C00446178 /* NewTripViewController.xib in Resources */,
+				42308FFA271357C300637EBE /* NewNoteViewController.xib in Resources */,
 				425016EB26CC2D0F003F0408 /* MainViewController.xib in Resources */,
 				42EFB07326CB0051006DD74A /* Assets.xcassets in Resources */,
 				4247E81F26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.xib in Resources */,
@@ -400,6 +407,7 @@
 				4247E81E26DC1CCE00E8F6C6 /* NoteDetailTitleDescriptionTableViewCell.swift in Sources */,
 				42DDF1C926D6D93200F5E8DE /* NoteDetailViewController.swift in Sources */,
 				42308FF32713561F00637EBE /* NewPlaceViewController.swift in Sources */,
+				42308FF9271357C300637EBE /* NewNoteViewController.swift in Sources */,
 				42DE953C2708C64C00446178 /* NewTripViewController.swift in Sources */,
 				42BCB9AC26F79F5E0085CCBF /* NewModelViewController.swift in Sources */,
 				425B42AC26D1A6FC0007AB96 /* NoteTableViewCell.swift in Sources */,
