@@ -17,7 +17,7 @@ class NewModelViewController: UIViewController {
     }
     @IBOutlet weak var newPlaceButton: UIButton!
     @IBAction func newPlaceButtonTapped(_ sender: Any) {
-        print("Add New Place button tapped")
+        self.goToNewPlaceVC()
     }
     @IBOutlet weak var newNoteButton: UIButton!
     @IBAction func newNoteButtonTapped(_ sender: Any) {
@@ -47,6 +47,14 @@ class NewModelViewController: UIViewController {
     private func goToNewTripVC() {
         let newTripVC: NewTripViewController = NewTripViewController()
         self.show(newTripVC, sender: self)
+    }
+    
+    ///
+    /// Go to NewPlaceViewController.
+    ///
+    private func goToNewPlaceVC() {
+        let newPlaceVC: NewPlaceViewController = NewPlaceViewController()
+        self.show(newPlaceVC, sender: self)
     }
     
 }
